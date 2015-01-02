@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+function parseXML()
+{
+//http://stackoverflow.com/questions/18442167/how-to-read-xml-file-using-javascript-in-chrome-only
+try //Internet Explorer
+    {
+        xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+    } catch (e) {
+        try //Firefox, Mozilla, Opera, etc.
+        {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", "ajax.xml", false);
+            xmlhttp.setRequestHeader('Content-Type', 'text/xml');
+            xmlhttp.send("");
+            xmlDoc = xmlhttp.responseXML;
+        } catch (e) {
+            alert(e.message);
+        }
+    }
+    try {
+		document.getElementById("to").innerHTML=xmlDoc.getElementsByTagName("to")[0].childNodes[0].nodeValue;
+		document.getElementById("from").innerHTML=xmlDoc.getElementsByTagName("from")[0].childNodes[0].nodeValue;
+		document.getElementById("message").innerHTML=xmlDoc.getElementsByTagName("message")[0].childNodes[0].nodeValue;
+    } catch (e) {
+        alert(e.message);
+    }
+    return (null);
+}
+
+</script>
+</head>
+<body onload="parseXML()">
+<h1>대국민 메세지!</h1>
+<p><b>To:</b> <span id="to"></span><br />
+<b>From:</b> <span id="from"></span><br />
+<b>Message:</b> <span id="message"></span>
+</p>
+</body>
+</html>

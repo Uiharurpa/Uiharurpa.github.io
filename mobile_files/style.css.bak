@@ -1,0 +1,534 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #fff url("../../img/bg/smart-background.gif") repeat 0 0;
+	color: #444;
+	font-size: 14px;
+	line-height: 1.4em;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	line-height: 14px;
+}
+
+h2 {
+	margin: 0 0 8px 0;
+	padding: 5px 5px 5px 5px;
+	font-size: 16px;
+	line-height: 16px;
+	background-color: #c1e0ff;
+	color: #555;
+	border-radius: 4px;
+}
+
+p {
+	margin: 0 0 5px 0;
+	line-height: 1.6em;
+}
+
+a {
+	color: #007de0;
+}
+a:hover {
+	color: #00b3ef;
+}
+
+/*-----------------------------------------
+// ヘッダー
+-----------------------------------------*/
+#header {
+	margin: 0;
+	height: 50px;
+	background-color: #c1e0ff;
+}
+#logo {
+	margin: 10px 0 0 5px;
+	float: left;
+}
+#logo img {
+	width: 133px;
+	height: 30px;
+}
+#btn-menu {
+	float: right;
+	padding: 14px 5px 0 0;
+}
+
+/*-----------------------------------------
+// コンテンツ
+-----------------------------------------*/
+#content {
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+.pr-wrap {
+	padding: 0 0 10px 0;
+}
+.pr {
+	margin: 0 auto;
+	padding: 0;
+	width: 320px;
+	height: 50px;
+	text-align: center;
+	background-color: #eee;
+}
+
+.box {
+	margin: 0 0 10px 0;
+	overflow: hidden;
+	word-break: break-all;
+	background-color: #fff;
+	border: 1px solid #eee;
+	border-radius: 4px;
+}
+
+.pad {
+	padding: 8px;
+}
+
+ul.list {
+	padding: 0 0 0 0;
+	list-style: url("../../img/list-sora.gif") outside;
+}
+ul.list li {
+	margin: 8px 0 8px 20px;
+}
+
+#signin-button {
+	padding: 10px 0 0 0;
+	text-align: center;
+}
+
+/*-----------------------------------------
+// フッターナビ
+-----------------------------------------*/
+#wrap-navi {
+	margin: 0 0 10px 0;
+}
+
+ul.footernavi {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border-bottom: 1px solid #eee;
+}
+ul.footernavi li {
+	margin: 0;
+	padding: 1em;
+	list-style-type: none;
+	text-align: left;
+	background-color: #fff;
+	border-top: 1px solid #eee;
+}
+ul.footernavi li div {
+	font-weight: bold;
+}
+ul.footernavi li a {
+	display: block;
+	background: url("../../img/list-sora.gif") no-repeat right center;
+	text-decoration: none;
+}
+ul.footernavi li:hover, ul.footernavi li:active {
+	background-color: #f8f8f8;
+}
+
+.footernavi-h {
+	margin: 0;
+	padding: 10px;
+	background-color: #c1e0ff;
+	color: #fff;
+	font-weight: bold;
+}
+
+/*-----------------------------------------
+// ボタン
+-----------------------------------------*/
+a.button {
+	display: block;
+	margin: 0 10px 10px 10px;
+	padding: 15px 10px;
+	font-size: 14px;
+	line-height: 14px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #e0efff;
+	border-radius: 4px;
+}
+a.button:hover, a.button:active {
+	background-color: #cce5ff;
+}
+
+a.sub-button {
+	margin: 0;
+	padding: 5px 10px;
+	font-size: 10px;
+	line-height: 10px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #fff;
+	border-radius: 4px;
+}
+a.sub-button:hover, a.sub-button:active {
+	background-color: #f8f8f8;
+}
+
+/*-----------------------------------------
+// フッター
+-----------------------------------------*/
+#footer {
+	margin: 0;
+	padding: 10px 0;
+	overflow: hidden;
+	height: 65px;
+	text-align: center;
+	font-size: 0.9em;
+	font-weight: normal;
+	color: #555;
+	background-color: #c1e0ff;
+}
+
+/*-----------------------------------------
+// プロフィール
+-----------------------------------------*/
+#profile h2 {
+	background-color: #f6f6f6;
+	color: #333;
+}
+
+.p-pad {
+	padding: 2px 5px 10px 5px;
+}
+
+#profile-image {
+	padding: 0 0 5px 0;
+	text-align: center;
+}
+
+#tbl-count {
+	width: 100%;
+	border: none;
+	font-size: 14px;
+}
+#tbl-count th {
+	padding: 3px 5px;
+	width: 7em;
+	text-align: left;
+	font-weight: bold;
+	background-color: #f8f8f8;
+}
+#tbl-count td {
+	padding: 3px 5px;
+	border: 1px solid #eee;
+}
+
+#tbl-date {
+	width: 100%;
+	border: none;
+	font-size: 14px;
+}
+#tbl-date th {
+	padding: 3px 5px;
+	width: 7em;
+	text-align: left;
+	font-weight: bold;
+	background-color: #f8f8f8;
+}
+#tbl-date td {
+	padding: 3px 5px;
+	border: 1px solid #eee;
+}
+
+/*-----------------------------------------
+// フィード
+-----------------------------------------*/
+ul.feed {
+	margin: 0;
+	padding: 0;
+	list-style: url("../../img/list-black.gif") inside;
+}
+
+ul.feed li {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+/*-----------------------------------------
+// プロフィール検索
+-----------------------------------------*/
+#result {
+	margin: 0 0 5px 0;
+	padding: 5px;
+	background-color: #f6f6f6;
+	color: #555;
+	border-radius: 4px;
+}
+/*-----------------------------------------
+// プロフィール設定
+-----------------------------------------*/
+#ProfileDescription {
+	width: 95%;
+	height: 200px;
+}
+
+#ProfilePersonalTag, #ProfileLikeTag, #ProfileDislikeTag, #ProfileFreedomTag {
+	width: 95%;
+}
+
+.submit {
+	text-align: center;
+}
+.submit input {
+	font-size: 14px;
+}
+
+/*-----------------------------------------
+// ページング
+-----------------------------------------*/
+.paging {
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	line-height: 1em;
+}
+.paging ul {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: 50%;
+	float: left;
+	list-style: none;
+}
+.paging ul li {
+	margin: 4px;
+	padding: 0;
+	position: relative;
+	left: -50%;
+	float: left;
+}
+.paging li.current {
+	padding: 10px;
+	border: 1px solid #ddd;
+	background-color: #00b3ef;
+	color: #fff;
+	border-radius: 6px;
+}
+.paging li.prev,
+.paging li.next {
+	padding: 10px;
+	border: 1px solid #ddd;
+	background-color: #eee;
+	color: #aaa;
+	border-radius: 6px;
+}
+.paging a {
+	display: block;
+	padding: 10px;
+	border: 1px solid #ddd;
+	background: #fcfcfc url("../../img/bg/button.png") repeat;
+	text-decoration: none;
+	border-radius: 6px;
+}
+.paging a:hover {
+	border: 1px solid #ccc;
+	background: #fcfcfc url("../../img/bg/button-gover.png") repeat;
+}
+
+
+/*-----------------------------------------
+// タグクラウド
+-----------------------------------------*/
+ul.tagCloud {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.tagCloud li {
+	float: left;
+	margin: 2px;
+}
+
+ul.tagCloud li a {
+	display: block;
+	margin: 0;
+	padding: 6px;
+	font-size: 1em;
+	line-height: 1em;
+	border: 1px solid #eee;
+	background: #fcfcfc url("../../img/bg/button.png") repeat-x;
+	color: #007de0;
+	text-decoration: none;
+	white-space: nowrap;
+	border-radius: 4px;
+}
+
+ul.tagCloud li.personal_tag a {
+	font-size: 14px;
+	color: #ff7f7f;
+}
+ul.tagCloud li.like_tag a {
+	font-size: 14px;
+	color: #7fbfff;
+}
+ul.tagCloud li.dislike_tag a {
+	font-size: 14px;
+	color: #bf7fff;
+}
+ul.tagCloud li.freedom_tag a {
+	font-size: 14px;
+	color: #ff9b38;
+}
+
+ul.tagCloud li a:hover {
+	background-image: none;
+	color: #007de0;
+	background: #fcfcfc url("../../img/bg/button-hover.png") repeat-x;
+}
+
+/*-----------------------------------------
+// clearfix
+-----------------------------------------*/
+.cf:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*-----------------------------------------
+// メッセージ
+-----------------------------------------*/
+.message {
+	margin: 0 0 10px 0;
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+	overflow: hidden;
+	word-break: break-all;
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #eee;
+	border-radius: 4px;
+}
+.error-message {
+	padding: 5px;
+	font-weight: bold;
+	color: #ff0000;
+}
+
+/*-----------------------------------------
+// アイコン
+-----------------------------------------*/
+#h-profile {
+	background-image: url("http://twpf.jp/img/profile/profile.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-screen-name {
+	background-image: url("http://twpf.jp/img/profile/screen-name.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-name {
+	background-image: url("http://twpf.jp/img/profile/name.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-location {
+	background-image: url("http://twpf.jp/img/profile/location.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-web {
+	background-image: url("http://twpf.jp/img/profile/web.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-count {
+	background-image: url("http://twpf.jp/img/profile/count.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-date {
+	background-image: url("http://twpf.jp/img/profile/date.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-description {
+	background-image: url("http://twpf.jp/img/profile/description.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-motto {
+	background-image: url("http://twpf.jp/img/profile/motto.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-personal {
+	background-image: url("http://twpf.jp/img/profile/personal.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-like {
+	background-image: url("http://twpf.jp/img/profile/like.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-dislike {
+	background-image: url("http://twpf.jp/img/profile/dislike.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-free {
+	background-image: url("http://twpf.jp/img/profile/free.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-tweet {
+	background-image: url("http://twpf.jp/img/profile/tweet.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-feed {
+	background-image: url("http://twpf.jp/img/profile/feed.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-check {
+	background-image: url("http://twpf.jp/img/profile/check.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-delete {
+	background-image: url("http://twpf.jp/img/profile/delete.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+#h-cancel {
+	background-image: url("http://twpf.jp/img/profile/cancel.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}

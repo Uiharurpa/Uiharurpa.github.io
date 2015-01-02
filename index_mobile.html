@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>우이하루 카자리(@Uiharu_rpa)</title>
+	<link rel="stylesheet" type="text/css" href="./mobile_files/style.css">
+	<script type="text/javascript" src="./mobile_files/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="./mobile_files/common.js"></script>
+
+	<style type="text/css">
+		#profile a { color: #0084B4 !important; }
+	</style>
+</head><script type="text/javascript">var new_nav = new function() {};var x;var old_navigator = window.navigator;for (x in navigator) {if (typeof navigator[x] == 'function') {eval("new_nav." + x + " = function() { return old_navigator." + x + "();};");} else {eval("new_nav." + x + " = navigator." + x + ";");}}new_nav.userAgent = "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_2 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8H7 Safari/6533.18.5";new_nav.vendor = "Apple, Inc.";window.navigator = new_nav;</script>
+<body id="top">
+<div id="container">
+<div class="pr-wrap"></div>
+	<div id="content">
+		<div id="profile">
+			<div class="box">
+				<div class="pad">
+					<h2 id="h-profile">Uiharu_rpa's Profile</h2>
+					<div id="profile-image"></div>
+					<h2 id="h-screen-name">유저명</h2>
+					<div class="p-pad"><a href="https://twitter.com/Last_order__b" target="_blank">@Uiharu_rpa</a></div>
+					<h2 id="h-name">이름</h2>
+					<div id="twitter_name" class="p-pad"></div>
+					<h2 id="h-location">위치</h2>
+					<div id="twitter_location" class="p-pad"></div>
+					<h2 id="h-web">Web</h2>
+					<div id="twitter_link" class="p-pad"></div>
+					<h2 id="h-description">자기 소개</h2>
+					<div id="twitter_description" class="p-pad"></div>
+					<h2 id="h-motto">자세한 자기 소개</h2>
+					<div id="twitter_detailed_description" class="p-pad"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+//http://stackoverflow.com/questions/18442167/how-to-read-xml-file-using-javascript-in-chrome-only
+	try //Firefox, Mozilla, Opera, etc.
+	{
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.open("GET", "uiharu_rpa.xml?ver=7", false);
+		xmlhttp.setRequestHeader('Content-Type', 'text/xml');
+		xmlhttp.send("");
+		xmlDoc = $.parseXML(xmlhttp.responseText);
+	} catch (e) {
+		alert(e.message);
+	}
+	try {
+		$xml = $(xmlDoc);
+		$('#profile-image').html($xml.find("twitter_pic").text());
+		$('#twitter_name').html($xml.find("twitter_name").text());
+		$('#twitter_location').html($xml.find("twitter_location").text());
+		$('#twitter_link').html($xml.find("twitter_link").text());
+		$('#twitter_description').html($xml.find("twitter_description").text());
+		$('#twitter_detailed_description').html($xml.find("twitter_detailed_description").text());
+	} catch (e) {
+		alert(e.message);
+	}
+</script>
+</body></html>

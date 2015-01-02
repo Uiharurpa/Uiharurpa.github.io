@@ -1,0 +1,327 @@
+@charset "utf-8";
+
+/*-----------------------------------------
+// トップバー
+-----------------------------------------*/
+.wrapper {
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+}
+#topbar {
+	margin: 0;
+	padding: 0;
+	background: transparent url("../img/bg/topbar.png") repeat;
+	height: 40px;
+	font-size: 14px;
+	line-height: 14px;
+	box-shadow: 0px 0px 2px #000;
+}
+#topbar-logo {
+	float: left;
+	padding-top: 4px;
+}
+#topbar-navi {
+	float: left;
+}
+#topbar-login-navi {
+	float: right;
+}
+
+#topbar ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+	list-style: none;
+}
+#topbar ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	z-index: 999;
+}
+#topbar ul li a {
+	display: block;
+	margin: 0;
+	padding: 13px 10px;
+	color: #fff;
+	text-decoration: none;
+}
+#topbar ul li a:hover {
+	background-color: #eee !important;
+	color: #555;
+}
+#topbar ul ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background: transparent url("../img/bg/topbar.png") repeat;
+	border-left: 1px solid #555;
+	border-right: 1px solid #555;
+	border-bottom: 1px solid #555;
+	box-shadow: 2px 2px 2px #aaa;
+}
+#topbar li li {
+	clear: both;
+	width: 100%;
+	white-space: nowrap;
+}
+#topbar li li a {
+	padding: 13px 10px;
+}
+#topbar li:hover {
+	position: relative;
+}
+#topbar li:hover > ul {
+	display: block;
+}
+
+/*-----------------------------------------
+// タブ
+-----------------------------------------*/
+ul.tab {
+	zoom: 1;
+	margin: 0;
+	padding: 0	 8px 0 8px;
+	list-style: none;
+}
+ul.tab:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	clear: both;
+}
+ul.tab li {
+	float: left;
+	margin: 0 5px 0 0;
+	padding: 0;
+	position: relative;
+	top: 1px;
+}
+ul.tab li a {
+	display: block;
+	float: left;
+	padding: 6px 8px;
+	text-decoration: none;
+	white-space: nowrap;
+	background: #f6f6f6 url("../img/bg/button.png") repeat-x;
+	border: 1px solid #dddddd;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+ul.tab li.active a, ul.tab li.current a {
+	background: #ffffff;
+	border-bottom: 1px solid #ffffff;
+}
+ul.tab a:hover {
+	background: #f6f6f6 url("../img/bg/button-hover.png") repeat-x;
+}
+.tab-panel {
+	margin: 0 0 10px 0;
+	padding: 8px;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	border-radius: 4px;
+}
+
+/*-----------------------------------------
+// タグクラウド
+-----------------------------------------*/
+ul.tagCloud {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.tagCloud li {
+	float: left;
+	margin: 2px;
+}
+
+ul.tagCloud li a {
+	display: block;
+	margin: 0;
+	padding: 6px;
+	font-size: 1em;
+	line-height: 1em;
+	color: #007de0;
+	background: #ffffff url("../img/bg/button.png") repeat-x;
+	border: 1px solid #eeeeee;
+	text-decoration: none;
+	white-space: nowrap;
+	border-radius: 4px;
+}
+
+ul.tagCloud li.personal_tag a {
+	font-size: 16px;
+	color: #ff7f7f;
+}
+ul.tagCloud li.like_tag a {
+	font-size: 16px;
+	color: #7fbfff;
+}
+ul.tagCloud li.dislike_tag a {
+	font-size: 16px;
+	color: #bf7fff;
+}
+ul.tagCloud li.freedom_tag a {
+	font-size: 16px;
+	color: #ff9b38;
+}
+
+ul.tagCloud li a:hover {
+	color: #007de0;
+	background: #f6f6f6 url("../img/bg/button-hover.png") repeat-x;
+	border: 1px solid #dddddd;
+	box-shadow: 0px 0px 5px #dddddd;
+}
+
+/*-----------------------------------------
+// リスト
+-----------------------------------------*/
+ul.d-list {
+	padding: 0 0 0 0;
+	list-style: url("../img/list-sora.gif") outside;
+}
+ul.d-list li {
+	margin: 8px 0 8px 20px;
+}
+
+/*-----------------------------------------
+// メッセージ
+-----------------------------------------*/
+.message {
+	margin: 0;
+	padding: 12px 0 12px 0;
+	font-size: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-weight: bold;
+	border-left: 1px solid #555;
+	border-right: 1px solid #555;
+	border-bottom: 1px solid #555;
+	background: transparent url("../img/bg/message.png") repeat-x;
+	color: #000000;
+	cursor: pointer;
+	z-index: 2;
+}
+.error-message {
+	padding: 5px 0 5px 0;
+	color: #ff0000;
+	font-weight: bold;
+}
+
+/*-----------------------------------------
+// clearfix
+-----------------------------------------*/
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+.clearfix {
+	display: block;
+}
+
+/*-----------------------------------------
+// アイコン
+-----------------------------------------*/
+#h-profile {
+	background-image: url("../img/profile/profile.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-screen-name {
+	background-image: url("../img/profile/screen-name.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-name {
+	background-image: url("../img/profile/name.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-location {
+	background-image: url("../img/profile/location.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-web {
+	background-image: url("../img/profile/web.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-count {
+	background-image: url("../img/profile/count.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-date {
+	background-image: url("../img/profile/date.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-description {
+	background-image: url("../img/profile/description.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-motto {
+	background-image: url("../img/profile/motto.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-personal {
+	background-image: url("../img/profile/personal.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-like {
+	background-image: url("../img/profile/like.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-dislike {
+	background-image: url("../img/profile/dislike.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-free {
+	background-image: url("../img/profile/free.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-tweet {
+	background-image: url("../img/profile/tweet.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-feed {
+	background-image: url("../img/profile/feed.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-check {
+	background-image: url("../img/profile/check.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-delete {
+	background-image: url("../img/profile/delete.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+#h-cancel {
+	background-image: url("../img/profile/cancel.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}

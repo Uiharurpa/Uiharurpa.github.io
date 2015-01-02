@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	color: #666;
+	background-color: #fff;
+}
+
+h1 {
+	margin: 0 0 8px 0;
+	padding: 5px 0 5px 28px;
+	border: 1px solid #ddd;
+	background-color: #f6f6f6;
+	color: #333;
+	font-size: 20px;
+	line-height: 20px;
+	border-radius: 4px;
+}
+
+h2 {
+	margin: 0;
+	padding: 5px 0 5px 25px;
+	border-bottom: 1px dashed #ccc;
+	color: #333;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+img {
+	border: none;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	line-height: 1.6em;
+}
+
+/*-----------------------------------------
+// コンテナ
+-----------------------------------------*/
+#container {
+	margin: 20px auto;
+	width: 728px;
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+}
+
+/*-----------------------------------------
+// コンテンツ
+-----------------------------------------*/
+#twitter-user {
+	margin: 0 0 8px 0;
+	padding: 8px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.box {
+	padding: 0 0 20px 0;
+}
+.pad {
+	padding: 8px 20px;
+	word-break: break-all;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
+.pr {
+	margin: 0 auto;
+	padding: 10px 0 20px 0;
+	width: 728px;
+	text-align: center;
+	background-color: #fff;
+}
+
+/*-----------------------------------------
+// フッター
+-----------------------------------------*/
+#footer {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	text-align: center;
+}
+
+/*-----------------------------------------
+// 画像、名前、場所、Web
+-----------------------------------------*/
+#user {
+	width: 100%;
+	border: none;
+}
+#user-icon {
+	padding: 0 40px 0 15px;
+	width: 128px;
+	vertical-align: middle;
+	text-align: center;
+}
+#user-info {
+	vertical-align: middle;
+	text-align: left;
+}
+#user-info h2 {
+	float: left;
+	padding: 12px 0 12px 25px;
+	width: 110px;
+	border: none;
+}
+#user-info p {
+	float: left;
+	margin: 0;
+	padding: 12px 0;
+	width: 330px;
+	line-height: 16px;
+}
+
+.uib-top {
+	border-top: 1px dashed #ccc;
+}
+.uib-bottom {
+	border-bottom: 1px dashed #ccc;
+}
+
+/*-----------------------------------------
+// カウントデータ
+-----------------------------------------*/
+#tbl-count {
+	border: none;
+	width: 100%;
+}
+#tbl-count th {
+	padding: 8px 5px;
+	width: 7em;
+	text-align: right;
+	font-weight: normal;
+	background-color: #f6f6f6;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+#tbl-count td {
+	padding: 8px 5px;
+	width: 12em;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+/*-----------------------------------------
+// 日付データ
+-----------------------------------------*/
+#tbl-date {
+	border: none;
+	width: 100%;
+}
+#tbl-date th {
+	padding: 8px 5px;
+	width: 7em;
+	text-align: right;
+	font-weight: normal;
+	background-color: #f6f6f6;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+#tbl-date td {
+	padding: 8px 5px;
+	width: 12em;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+/*-----------------------------------------
+// フィード
+-----------------------------------------*/
+dl.feed {
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+dl.feed dt {
+	margin: 0;
+	padding: 10px 0 10px 20px;
+	border-top:1px solid #ddd;
+	background: transparent url("../img/list-black.gif") no-repeat left center;
+}
+dl.feed dd {
+	margin: 0;
+	padding: 0 20px 10px 20px;
+}
