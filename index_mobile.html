@@ -42,27 +42,34 @@
 	</div>
 </div>
 <script type="text/javascript">
-//http://stackoverflow.com/questions/18442167/how-to-read-xml-file-using-javascript-in-chrome-only
-	try //Firefox, Mozilla, Opera, etc.
-	{
-		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "uiharu_rpa.xml?8", false);
-		xmlhttp.setRequestHeader('Content-Type', 'text/xml');
-		xmlhttp.send("");
-		xmlDoc = $.parseXML(xmlhttp.responseText);
-	} catch (e) {
-		alert(e.message);
-	}
-	try {
-		$xml = $(xmlDoc);
-		$('#profile-image').html($xml.find("twitter_pic").text());
-		$('#twitter_name').html($xml.find("twitter_name").text());
-		$('#twitter_location').html($xml.find("twitter_location").text());
-		$('#twitter_link').html($xml.find("twitter_link").text());
-		$('#twitter_description').html($xml.find("twitter_description").text());
-		$('#twitter_detailed_description').html($xml.find("twitter_detailed_description").text());
-	} catch (e) {
-		alert(e.message);
-	}
+try
+{
+	/*
+	http://stackoverflow.com/questions/18442167/how-to-read-xml-file-using-javascript-in-chrome-only
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET", "uiharu_rpa.xml?8", false);
+	xmlhttp.setRequestHeader('Content-Type', 'text/xml');
+	xmlhttp.send("");
+	xmlDoc = $.parseXML(xmlhttp.responseText);
+	*/
+	$.ajax({
+		url: "uiharu_rpa.xml?9",
+		dataType: 'xml',
+		success: function(data) {
+			$xml = $(data);
+			$('#twitter_pic').html($xml.find("twitter_pic").text());
+			$('#twitter_name').html($xml.find("twitter_name").text());
+			$('#twitter_location').html($xml.find("twitter_location").text());
+			$('#twitter_link').html($xml.find("twitter_link").text());
+			$('#twitter_description').html($xml.find("twitter_description").text());
+			$('#twitter_detailed_description').html($xml.find("twitter_detailed_description").text());
+		},
+		error: function(xhr) {
+			console.log('실패 - ', xhr);
+		}
+	});
+} catch (e) {
+	alert(e.message);
+}
 </script>
 </body></html>
