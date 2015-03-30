@@ -57,7 +57,7 @@ try
 		dataType: 'xml',
 		success: function(data) {
 			$xml = $(data);
-			$('#twitter_pic').html($xml.find("twitter_pic").text());
+			$('#profile-image').html($xml.find("twitter_pic").text());
 			$('#twitter_name').html($xml.find("twitter_name").text());
 			$('#twitter_location').html($xml.find("twitter_location").text());
 			$('#twitter_link').html($xml.find("twitter_link").text());
