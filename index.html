@@ -100,11 +100,23 @@
 //http://stackoverflow.com/questions/18442167/how-to-read-xml-file-using-javascript-in-chrome-only
 	try //Firefox, Mozilla, Opera, etc.
 	{
+		/*
 		var xmlhttp = new XMLHttpRequest();
 		xmlhttp.open("GET", "uiharu_rpa.xml?8", false);
 		xmlhttp.setRequestHeader('Content-Type', 'text/xml');
 		xmlhttp.send("");
 		xmlDoc = $.parseXML(xmlhttp.responseText);
+		*/
+		$.ajax({
+			url: "uiharu_rpa.xml?9",
+			dataType: 'xml',
+			success: function(data) {
+				xmlDoc = $.parseXML(data);
+			},
+			error: function(xhr) {
+				console.log('실패 - ', xhr);
+			}
+		});
 	} catch (e) {
 		alert(e.message);
 	}
