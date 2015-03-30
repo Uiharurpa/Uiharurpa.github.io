@@ -113,7 +113,7 @@ try
 		success: function(data) {
 			console.log('LOAD SUCCESS');
 			xmlDoc = $.parseXML(data);
-			$xml = $(xmlDoc);
+			$xml = $(data);
 			console.log($xml);
 			$('#twitter_pic').html($xml.find("twitter_pic").text());
 			$('#twitter_name').html($xml.find("twitter_name").text());
