@@ -6,7 +6,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-	<title>우이하루 카자리(@Uiharu_rpa)</title>
+	<title>우이하루 카자리(@Uiharu_KB)</title>
 	<link rel="stylesheet" type="text/css" href="./mobile_files/style.css">
 	<script type="text/javascript" src="./mobile_files/jquery-1.6.4.min.js"></script>
 	<script type="text/javascript" src="./mobile_files/common.js"></script>
@@ -22,10 +22,10 @@
 		<div id="profile">
 			<div class="box">
 				<div class="pad">
-					<h2 id="h-profile">Uiharu_rpa's Profile</h2>
+					<h2 id="h-profile">Uiharu_KB's Profile</h2>
 					<div id="profile-image"></div>
 					<h2 id="h-screen-name">유저명</h2>
-					<div class="p-pad"><a href="https://twitter.com/Uiharu_rpa" target="_blank">@Uiharu_rpa</a></div>
+					<div class="p-pad"><a href="https://twitter.com/Uiharu_KB" target="_blank">@Uiharu_KB</a></div>
 					<h2 id="h-name">이름</h2>
 					<div id="twitter_name" class="p-pad"></div>
 					<h2 id="h-location">위치</h2>
@@ -44,16 +44,8 @@
 <script type="text/javascript">
 try
 {
-	/*
-	http://stackoverflow.com/questions/18442167/how-to-read-xml-file-using-javascript-in-chrome-only
-	var xmlhttp = new XMLHttpRequest();
-	xmlhttp.open("GET", "uiharu_rpa.xml?8", false);
-	xmlhttp.setRequestHeader('Content-Type', 'text/xml');
-	xmlhttp.send("");
-	xmlDoc = $.parseXML(xmlhttp.responseText);
-	*/
 	$.ajax({
-		url: "uiharu_rpa.xml?9",
+		url: "Uiharu_KB.xml?9",
 		dataType: 'xml',
 		success: function(data) {
 			$xml = $(data);
