@@ -45,7 +45,7 @@
 try
 {
 	$.ajax({
-		url: "Uiharu_KB.xml?12",
+		url: "Uiharu_KB.xml?" + Date.now(),
 		dataType: 'xml',
 		success: function(data) {
 			$xml = $(data);
